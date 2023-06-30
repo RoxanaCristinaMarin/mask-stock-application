@@ -7,15 +7,17 @@ const passport = require('passport');
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = process.env.JWT_SECRET;
 
-passport.use(new JwtStrategy(opts, function (jwt_payload, done){
-    User.findOne({ id: jwt_payload.id}, function (err, user) {
-        if (err) {
-            return done(err, false);
-        }
-        if (user) {
+passport.use(new JwtStrategy(opts, async (jwt_payload, done)  => {
+    await User.findById(jwt_payload.id)
+        .then((user) => {
+          if (user) {
             return done(null, user);
-        } else {
-            return done(null, false);
-        }
-    })
+          }
+
+          return done(null, false);
+        })
+        .catch((err) => {
+          console.log(err);
+          return done(null, false);
+        });
 }))
