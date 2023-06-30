@@ -1,0 +1,51 @@
+[
+    {
+        "name":"The University Hospital Duesseldorf",
+        "address":"Duesseldorf",
+        "country":"Germany",
+        "VAT":"19%%"
+    },
+  {
+        "name":"The University Hospital of Ludwig Maximilian University of Munich",
+        "address":"Munich",
+        "country":"Germany",
+        "VAT":"19%%"
+    },
+  {
+        "name":"Rigas Austrumu Kliniskas Universitates",
+        "address":"Riga",
+        "country":"Latvia",
+        "VAT":"21%"
+    },
+  {
+        "name":"Karolinska University Hospital",
+        "address":"Stockholm",
+        "country":"Sweden",
+        "VAT":"25%"
+    },
+  {
+        "name":"Miskolci Semmelweis Ignác Egészségügyi Központ és Egyetemi Oktatókórház",
+        "address":"Miskolc ",
+        "country":"Hungary",
+        "VAT":"27%%"
+    },
+  {
+        "name":"Szent Pantaleon Kórház Kht",
+        "address":"Dunaújváros",
+        "country":"Hungary",
+        "VAT":"27%"
+    },
+ {
+        "name":"Fővárosi Önkormányzat Heim Pál Gyermekkórház",
+        "address":"Budapest ",
+        "country":"Hungary",
+        "VAT":"27%"
+    },
+      {
+        "name":"The Helios Hospital Berlin-Buch",
+        "address":"Berlin",
+        "country":"Germany",
+        "VAT":"19%%"
+    }
+    
+]
